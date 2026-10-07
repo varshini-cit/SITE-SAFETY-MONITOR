@@ -10,3 +10,11 @@ runs/
 outputs/
 *.pt
 *.onnx
+
+# Dashboard
+dashboard/node_modules/
+dashboard/dist/
+server/__pycache__/
+
+*.log
+Invalid switch - /\n

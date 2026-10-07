@@ -1,0 +1,14 @@
+# Site Safety Monitor - Python 3.10 dependencies
+# Install with: .venv\Scripts\python -m pip install -r requirements.txt
+
+ultralytics>=8.0.0          # YOLOv8 (pulls in torch, torchvision)
+opencv-python>=4.8.0        # video IO, drawing
+numpy>=1.24.0
+pandas>=2.0.0               # metrics/results inspection
+matplotlib>=3.7.0           # plots for the report
+pytest>=7.4.0               # unit tests only; not needed at inference time
+PyYAML>=6.0                 # dataset.yaml handling
+
+# NOTE: torch/torchvision are installed automatically as ultralytics
+# dependencies (CPU wheels on Windows). If you want to pin them, add e.g.:
+#   torch==2.2.2 torchvision==0.17.2
